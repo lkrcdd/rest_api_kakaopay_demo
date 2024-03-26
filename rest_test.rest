@@ -1,0 +1,17 @@
+POST https://open-api.kakaopay.com/online/v1/payment/ready HTTP/1.1
+Content-Type: application/json
+Authorization: SECRET_KEY DEV00140AF1652428A41AF97A8E95F6C70E7617F
+
+{
+	"cid": "TC0ONETIME",
+	"partner_order_id": "partner_order_id",
+	"partner_user_id": "partner_user_id",
+	"item_name": "초코파이",
+	"quantity": "1",
+	"total_amount": "2200",
+	"vat_amount": "200",
+	"tax_free_amount": "0",
+	"approval_url": "https://localhost:8080",
+	"fail_url": "https://localhost:8080",
+	"cancel_url": "https://localhost:8080"
+}
